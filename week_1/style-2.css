@@ -1,0 +1,17 @@
+table,
+th {
+    border: 1px solid #bcbcbc;
+    width: 600px;
+    height: 50px;
+    margin-left: center;
+    margin-right: center;
+    text-align: center;
+}
+
+#table_goose {
+    border: 0px solid white;
+}
+
+#table_duck {
+    border: 0px solid white;
+}

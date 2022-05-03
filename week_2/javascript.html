@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #display1 {
+            font-family: verdana;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        #display2 {
+            ont-family: verdana;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightgreen;
+        }
+
+        #display3 {
+            ont-family: verdana;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>My First JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('demo3').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <button type="button" onclick="document.getElementById('demo4').innerHTML = '챱챱'"
+        style="background-color: palegoldenrod;">
+        새로운 버튼을 누르면 글자가 나와</button>
+
+    <p id="demo2"></p>
+    <hr size="3">
+    <p id="demo3"></p>
+    <hr size="3">
+    <p id="demo4"></p>
+
+    <div id="display1">네이버</div>
+    <div id="display2">다음</div>
+    <div id="display3">구글</div>
+
+    <button type="button" id="display1" onClick="location.href='div_sample.html'">로그인 페이지로 이동</button>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+#area_1 {
+    font-family: verdana;
+    font-size: 30px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#area_2 {
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: pink;
+}
+
+#area_3 {
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+    background-color: yellow;
+}
+
+#area_4 {
+    font-family: verdana;
+    font-size: 10px;
+    text-align: center;
+    background-color: plum;
+}
