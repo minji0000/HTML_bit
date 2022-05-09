@@ -1,5 +1,6 @@
 *.png
 *.jpeg
 *.jpg
+/project/*
 
 /html/week_1/week_1_img/*

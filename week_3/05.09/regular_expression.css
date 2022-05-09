@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+body {
+    background-color: pink;
+}
+
+#img {
+    width: 800px;
+}
+
+#img2 {
+    width: 130px;
+}
+
+.regular {
+    position: relative;
+    top: 50px;
+    font-size: x-large;
+
+}

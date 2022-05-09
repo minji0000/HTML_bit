@@ -1,0 +1,182 @@
+#menu {
+    /*background-color: aqua; */
+}
+
+#logo {
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+#main {}
+
+#item {
+    position: relative;
+    top: -300px;
+    left: 700px;
+}
+
+#item2 {
+    position: relative;
+    top: -300px;
+    left: 800px;
+}
+
+#item3 {
+    position: relative;
+    top: -300px;
+    left: 900px;
+}
+
+#item4 {
+    position: relative;
+    top: -300px;
+    left: 1000px;
+}
+
+
+
+#btn1 {
+    position: relative;
+    top: -150px;
+    left: 300px;
+}
+
+#btn2 {
+    position: relative;
+    top: -150px;
+    left: 700px;
+
+}
+
+#name {
+    float: left;
+    position: relative;
+    top: -600px;
+    left: 510px;
+}
+
+#name2 {
+    float: left;
+    position: relative;
+    top: -600px;
+    left: 800px;
+}
+
+#name3 {
+    float: left;
+    position: relative;
+    top: -600px;
+    left: 1150px;
+}
+
+#poster {
+    position: relative;
+    width: 1900px;
+    height: 500px;
+    /* background-color: palegoldenrod; */
+}
+
+#one {
+    position: relative;
+    left: 50px;
+    top: 0px;
+}
+
+#two {
+    position: relative;
+    left: 150px;
+    top: 0px;
+
+}
+
+#three {
+    position: relative;
+    left: 250px;
+    top: 0px;
+}
+
+
+#merry {
+    position: relative;
+    left: 0px;
+    top: 100px;
+}
+
+#witch {
+    position: relative;
+    left: 280px;
+    top: 100px;
+}
+
+#aladin {
+    position: relative;
+    left: 570px;
+    top: 100px;
+}
+
+#display1 {
+    float: left;
+}
+
+#display2 {
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+#display3 {
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+#btn3 {
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+#info {
+
+    position: relative;
+    left: 100px;
+    top: 160px;
+    color: white;
+    background-color: hsl(351, 85%, 64%);
+    border-spacing: 10px;
+}
+
+#info2 {
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+ul {
+    float: left;
+}
+
+a {
+    color: wheat;
+}
+
+li {
+    color: wheat;
+}
