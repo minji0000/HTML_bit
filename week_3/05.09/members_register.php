@@ -14,7 +14,7 @@ echo "<h2>" . $NUMBER;
 echo "<hr>";
 echo "<h5>" . "<font color ='blue'>". $ID . "</font>";
 echo "<hr>";
-echo "<h5>" . "<font color ='red'>". $PW . "</font>" ;
+echo "<h5>" . "<font color ='red'>". $PW . "</font>";
 echo "<hr>";
 
 if($ID=="admin") {
@@ -29,7 +29,6 @@ for($i=0; $i < strlen($PW); $i++) {
 
 echo "<hr>";
 echo ( "$star"); 
-
 
 
 ?>
