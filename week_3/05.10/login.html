@@ -5,8 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="login.js"></script>
-    <title>로그인 페이지</title>
+    <script src="./login.js"></script>
+    <title>로그인</title>
+    <!--
+    <script>
+        let members_info =
+            [
+                ["토끼", "당근"],
+                ["코끼리", "과일"],
+                ["원숭이", "바나나"]
+                ["사자", "고기"]
+            ];
+
+        /* let loop;
+        for (loop = 0; loop <= 3; loop++) {
+            //회원정보배열에서 loop번째 사람의 []번 정보 이
+            document.write(members_info[loop][0]);
+            document.write("&nbsp"); document.write("&nbsp");
+            document.write(members_info[loop][1]);
+            document.write("<hr>");
+        } */
+
+        document.write('<table border="1">'); { // 테이블 생성
+            //members_info.length에서 (length)는 현재 members_info안에 몇줄(row)의 데이터가 있는지 알아냄
+            //즉, 0~3까지 반복하겠다는 의미가 된다.
+            for (i = 0; i < members_info.length; i++) {
+                document.write('<tr>');
+                //현재 [i]는 어떤 줄을 의미한다.
+                // 그리고 그 줄에 몇 개의 데이터(칸)가 있는지를 
+                // 즉 칸수만큼 반복하겠다는 의미이다.
+            }
+            for (j = 0; j < members_info[i].length; j++) {
+                document.write('<td>'); //여기서 1칸을 만들어낸다.
+                document.write(members_info[i][j]);
+                document.write('</td>'); // 여기서 1칸을 마감한다. (commit)
+            }
+            document.write('</tr>')//여기서 1줄을 마감한다. 
+        }
+        document.write('</table>') //테이블 마감
+
+    </script> -->
 </head>
 
 <body>
