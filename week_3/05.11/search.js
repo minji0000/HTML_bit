@@ -14,7 +14,7 @@ function find_this() {
     for (i = 0; i < members.length; i++) {
         for (j = 0; j < 5; j++) {
 
-            if (search_word == members[i][j]) { //이름은 [0]번째 칸에 있다. 
+            if (search_word == members[i][j]) {
                 alert("찾음");
                 return false;
             }
@@ -24,5 +24,4 @@ function find_this() {
             }
         }
     }
-    //이름은 [0]번째 칸에 있다. 
 } 

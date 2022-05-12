@@ -7,14 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>function을 써보자!</title>
     <script>
-        function something(data, data2) {
-            document.write("전달 받은 데이터는 " + data + " " + data2 + "입니다.");
-            return "이거 받아라!"
+        //데이터베이스
+        // 테이블(members_info.member1,name)
+        var members_info =
+        {   //member1 레코드
+            member1: { name: "minji", add: "seoul", num: "0401", id: "ming", pw: "blue" },
+            //member2 레코드
+            member2: { name: "merry", add: "yangpyong", num: "0823", id: "sky", pw: "hakjun" }
+        };
+
+        function find_name() {
+            let minji_name = document.getElementById("name").value;
+            console.log("얍!")
+            if (minji_name == members_info.member1.name) {
+                alert("찾음");
+            } else {
+                alert("없어");
+                return false;
+            }
         }
     </script>
 </head>
 
 <body>
+    <form method="post" onsubmit="return find_name()">
+        찾고 싶은 거 써바바<input type="text" id="name">
+        <input type="submit" value="찾아주세여">
+    </form>
 
 </body>
 
