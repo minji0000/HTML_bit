@@ -16,7 +16,7 @@ function Activate_Filters() {
     //     return false;
     // 
     for (var key in user_box) { // user_box안의 각 첫 객체들을 key값에 넣는다.
-        console.log([key]);
+        //console.log([key]);
         // console.log(user_box[key]);
         // j++;
         var personObj = user_box[key]; //personObj에 각각의 객체들의 요소들을 넣는다.
