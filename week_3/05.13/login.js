@@ -29,6 +29,26 @@ function members_compare() {
     }
 }
 
+function download(arr, text) {
+    let pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', arr);
+
+    if (document.createEvent) {
+        let event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        pom.dispatchEvent(event);
+    }
+    else {
+        pom.click();
+    }
+}
+
+download('test.txt', 'Hello world!');
+
+
+
+
 
 // for (let key in members_info) {
 //     let info = members_info[key];
