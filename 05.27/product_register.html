@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물건 저장! 인터페이스!</title>
+    <script defer src="product_register.js"></script>
+</head>
+
+<body>
+    <center>
+
+        <br> <br>
+
+        <table border="2">
+
+            <!-- 물건정보를 입력하는 상자들과 등록버튼, 출력버튼-->
+
+            <form name="reg_and_print_form" id="reg_and_print_form_id" method="post" action="">
+
+                <tr>
+                    <td>물건이름</td>
+                    <td><input type="text" id="p_name_id" name="p_name"></td>
+                </tr>
+
+                <tr>
+                    <td>제조사</td>
+                    <td><input type="text" id="p_manufac_id" name="p_manufac"></td>
+                </tr>
+
+                <tr>
+                    <td>가격</td>
+                    <td><input type="text" id="p_price_id" name="p_price"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" name="register_btn" onclick="register()" value="물건등록하기"></td>
+
+                    <td><input type="button" name="print_table_btn" onclick="print_table()" value="물건정보출력"></td>
+                </tr>
+
+            </form>
+
+        </table>
+
+
+
+        <tableborder="1">
+
+            <form name="search_form" id="search_form_id" method="post" action="">
+
+                <tr>
+                    <td>검색할물건이름</td>
+                    <td><input type="text" id="p_search_name_id" name="p_search_name"></td>
+                </tr>
+
+                <td><input type="button" name="search_name_btn" onclick="search_name()" value="물건이름검색"></td>
+                </tr>
+
+            </form>
+
+            </table>
+
+            <!--table출력하는곳-->
+
+            <div id="table_div"></div>
+
+            <h2 id="dis1"></h2>
+            <h2 id="dis2"></h2>
+            <h2 id="dis3"></h2>
+            <h2 id="dis4"></h2>
+
+            <p id="arr1"></p>
+            <p id="arr2"></p>
+            <p id="arr3"></p>
+
+
+
+    </center>
+</body>
+
+</html>
