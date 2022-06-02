@@ -1,0 +1,106 @@
+<!DOCTYPEhtml>
+
+    <html lang="en">
+
+    <head>
+
+        <style>
+            #menu1_id {
+                width: 200px;
+                height: 50px;
+            }
+
+            #menu2_id {
+                width: 200px;
+                height: 50px;
+            }
+        </style>
+
+        <style>
+            #submenu1_id {
+                display: none;
+            }
+
+            #sub_menu2_id {
+                display: none;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- [div {table} ]-->
+
+        <table border="0">
+
+            <tr>
+                <td>
+                    <p id="menu1_id">베스트셀러</p>
+                </td>
+                <td>
+                    <p id="menu2_id">국내도서</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="submenu1_display"></td>
+                <td id="submenu2_display"></td>
+            </tr>
+
+        </table>
+
+        <!------------------------------------------------------------------------------------------->
+
+        <script>
+
+            //가장상단에 "베스트셀러"와 "신간도서" 메뉴2개가 있다.(각각 하위메뉴를 가지고있다.)
+
+            //"베스트셀러" -->> "국내소설"/"해외소설"
+
+            //"신간도서" -->> "잡지"/"외국어"
+
+            //"베스트셀러" 메뉴위에 마우스가 올라가면, 하위메뉴가 출력된다.
+
+            //JQuery의 append를 사용해서 하위메뉴(도서목록)를 보여준다.
+
+            $("#menu1_id").mouseover(function () {
+
+                $("#submenu1_display").append("<p>국내소설</p><p>해외소설</p>");
+
+            });//================
+
+            $("#menu1_id").mouseleave(function () {
+
+                //"베스트셀러"의 하위메뉴가 출력되는곳(#submenu1_display)을 비워준다.
+
+                //#submenu1_display1 안에 존재하는것들만 없애준다.(<td id="submenu1_display"></td>는 그대로살아있음)
+
+                //즉, 테이블의 한칸안에 존재하는것들만 없애주고, 칸자체는 남겨둔다.
+
+                $("#submenu1_display").empty();
+
+            });//================
+
+            $("#menu2_id").mouseover(function () { $("#submenu2_display").append("<p>잡지</p><p>외국어</p>"); });
+
+            //================
+
+            $("#menu2_id").mouseleave(function () { $("#submenu2_display").empty(); });
+
+//================
+
+        </script>
+    </body>
+
+    </html>

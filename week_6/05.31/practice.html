@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리를 써보자</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h2").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <style>
+        div.out {
+            width: 200px;
+            height: 60px;
+            background-color: rgb(248, 208, 249);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>클릭해봐!</h2>
+
+    <div class="out">
+        <p>마우스 갖다대바바~</p>
+        <p>0</p>
+    </div>
+    <script>
+        // 마우스가 위에 올라가면 작동
+        let i = 0;
+        $("div.out").mouseover(function () {
+            $("p:first", this).text("mouse over");
+            $("p:last", this).text(++i);
+        });
+
+
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "pink");
+            });
+
+            $("input").blur(function () {
+                $(this).css("background-color", "white");
+            });
+        });
+
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color: yellow");
+            });
+
+            $("input").blur(function () {
+                $(this).css("background-color", "white");
+            });
+        });
+
+
+
+
+    </script>
+    아이디: <input type="text" name="id">
+    <br> <br>
+    <button id="show">보여즈세ㅕ여~</button>
+    <button id="to">토글이에여~</button>
+    <br> <br>
+    <img id="kr" src="./gVT9s0U7_400x400.jpeg" alt="" style="display: none" />
+    <img id="km" src="./gVT9s0U7_400x400.jpeg" alt="" style="display: none" />
+
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("#kr").show("slow");
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("#to").click(function () {
+                $("#km").toggle("fast");
+            });
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

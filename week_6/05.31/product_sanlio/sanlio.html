@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> [ver. 산리오] 배열에 저장/검색/테이블을 만들자!</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script defer src="sanlio.js"></script>
+    <link rel="stylesheet" type="text/css" href="sanlio.css">
+</head>
+
+
+<body>
+    <center>
+
+        <div class="main_div">
+            <form method="post" action="" class="main_box" onsubmit="return false;">
+                CHARACTER <input type="text" id="character">
+                <br> <br>
+                COLOR <input type="text" id="color">
+                <br> <br>
+                BIRTHDAY <input type="text" id="birthday">
+                <br> <br>
+                FRIEND <input type="text" id="friend">
+                <br> <br>
+                <button id="save_btn" onclick="save()">SAVE</button>
+                <button id="print_btn" onclick="print_table()">PRINT</button>
+            </form>
+        </div>
+
+        <div class="print_div">
+            정보 출력할 곳
+        </div>
+
+        <div class="search_div">
+            <form method="post" action="" onsubmit="return false;">
+                <input type="text" id="search">
+                <button id="search_btn" onclick="search_name()">SEARCH</button>
+            </form>
+        </div>
+
+        <div class="img_div">
+            <img src="main_visual_pc_v1.png" id="main_img">
+        </div>
+
+
+
+    </center>
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.menu {
+    position: relative;
+    top: 10px;
+    font-size: 12pt;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.menu_font {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    color: white;
+    width: 700px;
+    background-color: deeppink
+}
+
+
+#in_분야보기 {
+    display: none;
+    position: absolute;
+    left: 200px;
+
+}
+
+#in_추천마법사 {
+    font-size: 9pt;
+    position: absolute;
+    left: 500px;
+    display: none;
+}
+
+#in_베스트셀러 {
+    display: none;
+}
+
+#in_새로나온책 {
+    font-size: 9pt;
+    position: absolute;
+    left: 755px;
+    display: none;
+}
+
+#in_이벤트 {
+    font-size: 9pt;
+    position: absolute;
+    left: 863px;
+    display: none;
+}
+
+#in_추천도서 {
+    font-size: 9pt;
+    position: absolute;
+    left: 980px;
+    display: none;
+}
+
+
+#show1 {
+    display: none;
+}
+
+.display {
+    top: 80px;
+}
+
+#best1 {
+    display: none;
+}
+
+#best2 {
+    display: none;
+}
+
+
+
+/* 여기 밑으로 제발 건들지마... 이미 완성임 건들면 망가져 ㅜ */
+
+.book {
+    display: flex;
+    justify-content: center;
+    top: 200px;
+    height: 1500px;
+    width: 1100px;
+    position: relative;
+    background-color: hwb(88 81% 4%);
+}
+
+/* ------------------------------*/
+#book1 {
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    width: 1000px;
+    height: 430px;
+    position: absolute;
+    background-color: #cedff2;
+
+
+
+}
+
+#img_book1 {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 400px;
+}
+
+#ex_book1 {
+    top: 80px;
+    left: 450px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.423);
+    width: 500px;
+}
+
+/* ------------------------------*/
+#book2 {
+    display: flex;
+    justify-content: center;
+    top: 550px;
+    width: 1000px;
+    height: 430px;
+    position: absolute;
+    background-color: #cedff2;
+
+
+}
+
+#img_book2 {
+    top: 15px;
+    left: 10px;
+    position: absolute;
+
+    width: 400px;
+}
+
+#ex_book2 {
+    top: 80px;
+    left: 450px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.423);
+
+    width: 500px;
+}
+
+
+/* ------------------------------*/
+#book3 {
+    display: flex;
+    justify-content: center;
+    top: 1000px;
+    width: 1000px;
+    height: 430px;
+    position: absolute;
+    background-color: #cedff2;
+
+
+}
+
+#img_book3 {
+    top: 15px;
+    left: 10px;
+    position: absolute;
+
+    width: 400px;
+}
+
+#ex_book3 {
+    top: 80px;
+    left: 450px;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.423);
+    width: 500px;
+
+}
+
+/* ------------------------------*/
