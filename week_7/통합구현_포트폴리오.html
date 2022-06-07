@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합구현_포트폴리오</title>
+    <script defer src="통합구현_포트폴리오.js"></script>
+</head>
+
+<body>
+    <center>
+
+
+        <br> <br>
+        <form method="post" action="">
+            물건 이름 <input type="text" id="name" maxlength="5"> <br> <br>
+            물건 가격 <input type="number" id="price"><br> <br>
+            제조사 이름 <input type="text" id="manufac" maxlength="6"><br> <br>
+            유통기한 <input type="date" id="date"><br> <br>
+            <input type="button" value="저장하기" onclick="register()">
+            <input type="button" value="출력하기" onclick="print_table()">
+        </form>
+        <br> <br> <br> <br>
+
+        <form method="post">
+            <input type="text" id="search_name">
+            <input type="button" value="검색하기" onclick="search()">
+        </form>
+
+        <br> <br>
+
+
+
+        <div id="table_div"></div>
+
+
+
+    </center>
+</body>
+
+</html>

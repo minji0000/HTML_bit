@@ -22,14 +22,14 @@
 #in_분야보기 {
     display: none;
     position: absolute;
-    left: 200px;
+    left: 450px;
 
 }
 
 #in_추천마법사 {
     font-size: 9pt;
     position: absolute;
-    left: 500px;
+    left: 755px;
     display: none;
 }
 
@@ -180,3 +180,49 @@
 }
 
 /* ------------------------------*/
+
+
+.wrapper {
+    /*     height:700px; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item {
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+    font-size: 35px;
+    text-align: center;
+}
+
+.item:nth-child(2) {
+    background-color: green;
+}
+
+.item:nth-child(3) {
+    background-color: blue;
+}
+
+.container ul {
+    -webkit-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+    -o-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+    transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+}
